@@ -1,3 +1,16 @@
+# Understanding, How Redux works
+
+## ``` 1. STORE ```
+###  🚀: -  Globalize state
+## ``` ACTION ``` 
+### 🚀: - Task
+## ``` REDUCER ```
+### 🚀: - check which action you did and modify your state. 
+
+![Workflow](https://koenig-media.raywenderlich.com/uploads/2021/04/three-ducks-redux-workflow.png)
+
+#
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
