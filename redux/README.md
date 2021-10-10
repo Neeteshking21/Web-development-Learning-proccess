@@ -2,14 +2,26 @@
 
 ## ``` 1. STORE ```
 ###  🚀: -  Globalize state
-## ``` ACTION ``` 
+</br>
+
+## ``` 2. ACTION ```        
 ### 🚀: - Task
-## ``` REDUCER ```
+</br>
+
+## ```3. REDUCER ```
 ### 🚀: - check which action you did and modify your state. 
+</br>
+
+## ``` DISPATCH ```
+### 🚀: - Execute the action to the reducer
+</br>
+
 
 ![Workflow](https://koenig-media.raywenderlich.com/uploads/2021/04/three-ducks-redux-workflow.png)
 
-#
+</br>
+</br>
+</br>
 
 # Getting Started with Create React App
 
