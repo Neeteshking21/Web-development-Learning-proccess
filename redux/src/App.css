@@ -1,0 +1,10 @@
+div{
+    width:40vw;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    width:auto
+}
