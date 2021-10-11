@@ -23,6 +23,11 @@
 </br>
 </br>
 
+# ``` redux-thunk ```
+### 🚀 : - Redux Thunk middleware allows you to write action creators that return a function instead of an action. 
+</br>
+![thunk](https://miro.medium.com/max/1400/1*QERgzuzphdQz4e0fNs1CFQ.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
