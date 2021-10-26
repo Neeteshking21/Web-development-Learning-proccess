@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/start/{name}', function ($name) {
+    return view('start', ['name'=>$name]);
+});
+// Route::view('end','start');
