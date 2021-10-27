@@ -55,4 +55,13 @@ Directory<br/>
 ```
 php artisan make:controller <controller_name>
 ```
+<br/>
 
+# View 🔥
+
+<p>View is to show somthing to User as HTML page. The extension of view  files should be like < file_name >.blade.php. Here blade is an template engine which is provided by laravel.</p>
+
+<b>Directory</b><br/>
+<i> Project 👉 app 👉 resources 👉 views </i>
+
+<br/>

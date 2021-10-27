@@ -17,8 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+//  Emapmle of View
 Route::get('/start/{name}', function ($name) {
     return view('start', ['name'=>$name]);
 });
 
+
+// Example of Controllers
 Route::get('/controller/{user}', [test::class , 'name']);
