@@ -15,12 +15,12 @@ project -> routes -> web.php
 ``` 
 Create a route
 ```
-Route::METHOD(uri, view)
+Route::METHOD(uri, controller)
  ```
  Small Syntax
 
  ```
- Route::view(url, pageName)
+ Route::view(url, controller)
  ```
  Pass Data with Routing  ex:
  ```
@@ -39,5 +39,20 @@ Syntax -> redirect("view") -
 Route::get('/', function(){
      return redirect("about");
  });
+```
+<br/>
+
+# Controller 🔥
+<p>Controller is central Unit of MVC frameworks.</p>
+<p>Controller fetches the data from model and send to View.</p>
+<p>All logical and Routers tasks are done in Controller.</p>
+Directory<br/>
+<i>Project 👉 app 👉 Http 👉 Controllers</i>
+<br/>
+<br/>
+<b>Syntax :</b>
+
+```
+php artisan make:controller <controller_name>
 ```
 

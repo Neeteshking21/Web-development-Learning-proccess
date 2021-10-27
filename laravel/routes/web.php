@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\test;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,4 +20,5 @@ Route::get('/', function () {
 Route::get('/start/{name}', function ($name) {
     return view('start', ['name'=>$name]);
 });
-// Route::view('end','start');
+
+Route::get('/controller/{user}', [test::class , 'name']);
