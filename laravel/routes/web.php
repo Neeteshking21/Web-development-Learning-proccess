@@ -19,6 +19,9 @@ Route::get('/', function () {
 
 
 //  Emapmle of View
+// Route::get('/start', function () {
+//     return view('start');
+// });
 Route::get('/start/{name}', function ($name) {
     return view('start', ['name'=>$name]);
 });
@@ -26,3 +29,4 @@ Route::get('/start/{name}', function ($name) {
 
 // Example of Controllers
 Route::get('/controller/{user}', [test::class , 'name']);
+Route::view('/about', 'about' );

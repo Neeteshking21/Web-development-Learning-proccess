@@ -65,3 +65,20 @@ php artisan make:controller <controller_name>
 <i> Project 👉 app 👉 resources 👉 views </i>
 
 <br/>
+<br/>
+
+# Laravel Components 🔥
+<p>The components are basically a peace of code that can be re-use easily. <br/>Almost all the modern systems are composed of self-contained, independent, reusable small entities. Each of these entities has a specific functionality provided to the system as a whole. The Laravel components are a small entity with an interface that is well defined. These serve as the building block for a large software system. All the related data is encapsulated in the reusable unit.</p>
+
+CMD
+
+```
+php artisan make:component <name>
+```
+Every componets will have two files view and php.<br/>
+
+Directory of view <br/>
+<i> Project 👉 app 👉 resources 👉 views 👉 components </i><br/><br/>
+Directory of php<br/>
+<i> Project 👉 app 👉 View 👉 Components </i><br/><br/>
+
