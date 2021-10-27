@@ -1,9 +1,11 @@
-const express = require('express')
+// Start your es6 scripts here
+
+import express from 'express'
+
+
 const app = express()
-const PORT = process.env.PORT || 5000
-
-app.get('/', (req, res)=> res.send("Home page"))
-
-app.listen(PORT, () => {
-    console.log(`Server started on http://localhost:${PORT}`)
+app.get('/', (req, res)=>{
+    res.send("Learn GraphQl")
 })
+
+app.listen(5000, ()=> console.log(`Server is running on http://localhost:5000`))
