@@ -106,6 +106,38 @@ Use for each loop condition
  code ... 
 @endforeach
 ```
+<br/>
+
+## Include View inside a View
+
+```
+@include('view_name')
+```
+
+## Use javascript in blade.php
+```
+@csrf
+<script>
+  let data = @json($user)   // here $user is an php variable
+  console.log(data)
+</script>
+```
+
+<br/>
+
+## Use Internal CSS
+
+```
+<style>
+  indicator{
+    property 1:value 1;
+            .
+            .
+            .
+    property N:value N;
+  }
+</style>
+```
 
 <br/>
 
