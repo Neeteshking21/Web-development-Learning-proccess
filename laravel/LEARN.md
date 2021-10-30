@@ -65,6 +65,48 @@ php artisan make:controller <controller_name>
 <i> Project 👉 app 👉 resources 👉 views </i>
 
 <br/>
+
+## Use Conditions  
+* For use PHP in .blade.php view, you have to use ``` {{ }} ``` <br/>
+* For use if 
+  ```       
+  @if(condition)
+    code......
+  @endif  
+  ```
+* For use if/else consition
+  ```
+  @if(condition)
+    code..........
+  @else
+    code .....
+  ```
+* For use nested if/else consition
+  ```
+  @if(condition 1)
+    code..........
+  @elseif(condition n)
+    code .....
+  @else
+    code .....
+  ```
+
+<br/>
+
+## Use Loops
+Use For Loop
+```
+@for(initialization ; condition ; increment/decrement)
+    code .....
+@endfor
+```
+Use for each loop condition
+```
+@foreach(array as ele)
+ code ... 
+@endforeach
+```
+
 <br/>
 
 # Laravel Components 🔥

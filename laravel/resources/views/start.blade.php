@@ -1,6 +1,4 @@
-<!-- Use header component -->
-<!-- <x-header />  -->
-<!-- <x-header data="About Page Header"/>  -->
-
-<h1>Hii, Lets start from here🚀</h1>
-<!-- <iframe src="http://localhost:8000/about" ></iframe> -->
+<x-header data="Start page NavBar" />
+<div>
+    <h1>Start Page {{$name}}<h1>
+</div>

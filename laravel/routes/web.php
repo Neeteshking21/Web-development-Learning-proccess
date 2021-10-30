@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\test;
+use App\Http\Controllers\Userscontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,3 +31,7 @@ Route::get('/start/{name}', function ($name) {
 // Example of Controllers
 Route::get('/controller/{user}', [test::class , 'name']);
 Route::view('/about', 'about' );
+
+// 
+
+Route::get('/users', [Userscontroller::class, 'viewLoad']);
