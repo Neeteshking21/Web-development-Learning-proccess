@@ -155,4 +155,12 @@ Directory of view <br/>
 <i> Project 👉 app 👉 resources 👉 views 👉 components </i><br/><br/>
 Directory of php<br/>
 <i> Project 👉 app 👉 View 👉 Components </i><br/><br/>
+<br/>
+
+# Laravel Middleware 🔥
+<p> Middleware is a peace of code that can filter out the user request ex- Login </p>
+
+```
+php artisan make:middleware <middleware_name>
+```
 

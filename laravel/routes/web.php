@@ -44,5 +44,6 @@ Route::get('/users', [Userscontroller::class, 'viewLoad']);
 */
 Route::post("formlogin", [formController::class, 'getData']);
 Route::view("form", "form");
+Route::view("noaccess", "noaccess");
 
 // Route:post('formlogin', [formController::class, 'getData']);
