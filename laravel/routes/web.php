@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\test;
 use App\Http\Controllers\Userscontroller;
+use App\Http\Controllers\formController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,3 +36,13 @@ Route::view('/about', 'about' );
 // 
 
 Route::get('/users', [Userscontroller::class, 'viewLoad']);
+
+/*
+/-----------------------------------------------------------------
+/ Login Form
+/-----------------------------------------------------------------
+*/
+Route::post("formlogin", [formController::class, 'getData']);
+Route::view("form", "form");
+
+// Route:post('formlogin', [formController::class, 'getData']);
