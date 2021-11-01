@@ -1,4 +1,4 @@
 <x-header data="Start page NavBar" />
 <div>
-    <h1>Start Page {{$name}}<h1>
+    <h1>Start Page<h1>
 </div>

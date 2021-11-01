@@ -19,21 +19,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 //  Emapmle of View
 // Route::get('/start', function () {
 //     return view('start');
 // });
 Route::get('/start/{name}', function ($name) {
-    return view('start', ['name'=>$name]);
+    return view('start', ['name' => $name]);
 });
 
-
 // Example of Controllers
-Route::get('/controller/{user}', [test::class , 'name']);
-Route::view('/about', 'about' );
+Route::get('/controller/{user}', [test::class, 'name']);
+Route::view('/about', 'about');
 
-// 
+//
 
 Route::get('/users', [Userscontroller::class, 'viewLoad']);
 
@@ -42,8 +40,12 @@ Route::get('/users', [Userscontroller::class, 'viewLoad']);
 / Login Form
 /-----------------------------------------------------------------
 */
-Route::post("formlogin", [formController::class, 'getData']);
-Route::view("form", "form");
-Route::view("noaccess", "noaccess");
+Route::post('formlogin', [formController::class, 'getData']);
+Route::view('form', 'form');
+Route::view('noaccess', 'noaccess');
+
+Route::group(['middleware' => ['protectedPage']], function () {
+    Route::view('start', 'start');
+});
 
 // Route:post('formlogin', [formController::class, 'getData']);

@@ -21,10 +21,11 @@
 </head>
 <body>
     @include('welcome')
-    <h1>UsersRouter</h1>
-    {{count($users)}}
-    {{implode(" ",$users)}}
-
+    {{-- <h1>UsersRouter</h1>
+    @if($users) 
+        {{count($users)}}
+        {{implode(" ",$users)}}
+    @endif --}}
     @for($i=0; $i<=10; $i++)
     <span class="spanItems">{{$i*$i}}</span> &nbsp &nbsp;
     @endfor

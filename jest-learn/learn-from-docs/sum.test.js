@@ -74,3 +74,61 @@ test("Testing Exceptions", ()=>{
     expect(() => testFunc()).not.toThrow('you are using the wrong JDK');
     // expect(() => testFunc()).toThrow(/JDK/);
 });
+
+
+/*
+/------------------------------------------------------
+//  Testing Asynchronous Code                         |
+/------------------------------------------------------
+*/
+/* function fetchData(){
+    return "peanut butter";
+}
+
+test('the data is peanut butter', done => {
+    function callback(data) {
+        try {
+            expect(data).toBe('peanut butter');
+            done();
+        } catch (error) {
+            done(error);
+        }
+    }
+    
+    fetchData(callback);
+});
+
+*/
+
+/*
+/------------------------------------------------------
+//  Promises                        |
+/------------------------------------------------------
+*/
+// function fetchData(){
+//     return /peanut butter/;
+// }
+// test('the data is peanut butter', () => {
+//     return fetchData().then(data => {
+//       expect(data).toBe(/peanut butter/i);
+//     });
+//   });
+
+/*
+/------------------------------------------------------
+//  .resolves / .rejects                       |
+/------------------------------------------------------
+
+You can also use the .resolves matcher in your expect statement, and Jest will wait for that promise to resolve. If the promise is rejected, the test will automatically fail.
+*/
+// test('the data is peanut butter', () => {
+//   return expect(fetchData()).resolves.toBe('peanut butter');
+// });
+ /*
+Be sure to return the assertion—if you omit this return statement, your test will complete before the promise returned from fetchData is resolved and then() has a chance to execute the callback.
+
+If you expect a promise to be rejected, use the .rejects matcher. It works analogically to the .resolves matcher. If the promise is fulfilled, the test will automatically fail.
+*/
+// test('the fetch fails with an error', () => {
+//   return expect(fetchData()).rejects.toMatch('error');
+// });
