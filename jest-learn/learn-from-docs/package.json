@@ -1,0 +1,17 @@
+{
+  "name": "learn-from-docs",
+  "version": "1.0.0",
+  "description": "Learn Jest from official docs",
+  "main": "index.js",
+  "author": "Neetesh Kumar Sharma",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1"
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div>
+    <div className='container'> 
       <h1> learn react </h1>
     </div>
   )
