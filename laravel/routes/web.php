@@ -48,4 +48,6 @@ Route::group(['middleware' => ['protectedPage']], function () {
     Route::view('start', 'start');
 });
 
+Route::view('routeCheck', 'routeCheck')->middleware('routeProtectedPage');
+
 // Route:post('formlogin', [formController::class, 'getData']);
