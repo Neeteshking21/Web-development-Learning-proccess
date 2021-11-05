@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\test;
 use App\Http\Controllers\Userscontroller;
 use App\Http\Controllers\formController;
+use App\Http\Controllers\database1;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,5 +50,6 @@ Route::group(['middleware' => ['protectedPage']], function () {
 });
 
 Route::view('routeCheck', 'routeCheck')->middleware('routeProtectedPage');
+Route::get('db', [database1::class, 'mydatabase']);
 
 // Route:post('formlogin', [formController::class, 'getData']);

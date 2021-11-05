@@ -132,3 +132,6 @@ If you expect a promise to be rejected, use the .rejects matcher. It works analo
 // test('the fetch fails with an error', () => {
 //   return expect(fetchData()).rejects.toMatch('error');
 // });
+
+
+
