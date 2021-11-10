@@ -15,4 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+}); 
+
+Route::get('/post/{id}/{cars}', function($id, $cars){
+    return "The employee ".$id ." has ".$cars . " cars";
 });
